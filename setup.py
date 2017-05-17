@@ -5,8 +5,9 @@ def readme():
     with open('README.md') as f:
         return f.read()
 
+
 setup(name='flickr_download',
-      version='0.2.17',
+      version='0.2.19',
       description='Download photos from Flickr',
       long_description=readme(),
       url='https://github.com/beaufour/flickr-download.git',
@@ -21,7 +22,7 @@ setup(name='flickr_download',
       ],
       test_suite='tests.get_tests',
       tests_require=[
-          'unittest2==0.8.0',
+          'unittest2==1.1.0',
           'attrdict==0.5.1',
       ],
       entry_points={
